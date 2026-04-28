@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- 番茄主体 -->
+    <path
+        android:fillColor="#D84315"
+        android:pathData="M24,12 C16,12 10,18 10,26 C10,34 16,40 24,42 C32,40 38,34 38,26 C38,18 32,12 24,12 Z" />
+
+    <!-- 番茄叶子 -->
+    <path
+        android:fillColor="#43A047"
+        android:pathData="M24,6 L22,12 L26,12 Z" />
+
+    <!-- 高光 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M18,16 C16,18 15,21 15,24 C15,25 15.2,26 15.5,27 C16,24 17,21 19,19 C20,18 18.5,16.5 18,16 Z" />
+</vector>

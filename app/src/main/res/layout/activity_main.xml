@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5E6"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🍅 番茄钟"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#D84315"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="#D84315"
+        android:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_container"
+        android:layout_marginTop="60dp" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/timer_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="开始"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/pause_button"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="暂停"
+                android:textSize="18sp"
+                android:backgroundTint="#FF9800"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="重置"
+                android:textSize="18sp"
+                android:backgroundTint="#F44336" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择模式"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/work_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="工作\n25分钟"
+                android:textSize="14sp"
+                android:backgroundTint="#D84315"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/short_break_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="短休息\n5分钟"
+                android:textSize="14sp"
+                android:backgroundTint="#2196F3"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/long_break_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="长休息\n15分钟"
+                android:textSize="14sp"
+                android:backgroundTint="#9C27B0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
